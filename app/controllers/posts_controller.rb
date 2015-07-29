@@ -16,6 +16,12 @@ class PostsController < ApplicationController
   end
 
   def create
+    title = params[:title]
+    content = params[:content]
+
+    Post.create(title: title , content: content)
+
+    redirect_to '/posts'
   end
 
 end
