@@ -1,7 +1,18 @@
 <h1>여기는 index 액션인 페이지입니다</h1>
+<!-- 기본적인 @변수 사용법입니다. -->
 <div class="title">
   title : <%= @title %>
 </div>
 <div class="content">
   content : <%= @content %>
 </div>
+
+<!--해쉬는 이렇게 사용합니다.-->
+<div class="title">
+  title : <%= @post[:title] %>
+</div>
+<div class="content">
+  content : <%= @post[:content] %>
+</div>
+
+
