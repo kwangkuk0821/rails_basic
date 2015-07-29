@@ -1,5 +1,5 @@
 <h1>여기는 index 액션인 페이지입니다</h1>
-<!-- 기본적인 @변수 사용법입니다. -->
+<h2>기본적인 @변수 사용법입니다.</h2>
 <div class="title">
   title : <%= @title %>
 </div>
@@ -7,7 +7,7 @@
   content : <%= @content %>
 </div>
 
-<!--해쉬는 이렇게 사용합니다.-->
+<h2>해쉬는 이렇게 사용합니다.</h2>
 <div class="title">
   title : <%= @post[:title] %>
 </div>
@@ -15,4 +15,12 @@
   content : <%= @post[:content] %>
 </div>
 
-
+<h2>데이터베이스 테이블의 각각의 레코드는 이렇게 가져옵니다.</h2>
+<% @posts.each do |p| %>
+  <div class="title">
+    title : <%= p.title %>
+  </div>
+  <div class="content">
+    content : <%= p.content %>
+  </div>
+<% end %>

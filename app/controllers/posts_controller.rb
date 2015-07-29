@@ -11,5 +11,7 @@ class PostsController < ApplicationController
       title: "안녕!",
       content: "choco 전부 대박나세요!"
     }
+
+    @posts = Post.all
   end
 end
