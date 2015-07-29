@@ -14,10 +14,10 @@
 - 데이터베이스 생성(rake db:migrate)
 - 데이터베이스 테이블의 모든 레코드 가져오기
 - 뷰파일에 가져온 데이터베이스 레코드 출력
-- resource 를 이용해서 restful Api
+- resources 를 이용해서 restful Api
 - form 태그 사용해보기
 - form 태그를 ruby 코드로 생성하는 form_tag helper 로 바꾸기
-- resource 중 create 액션만 이용
+- resources 중 create 액션만 이용
 - create 액션에서 데이터 받기
 - 받은 데이터를 기반으로 데이터베이스 레코드 생성하기
 - 목록을 볼 수 있는 페이지로 redirect_to 시키기
