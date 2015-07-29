@@ -1,11 +1,11 @@
 <h1>여기는 index 액션인 페이지입니다</h1>
 <h2>기본적인 @변수 사용법입니다.</h2>
 
-<form class="myform">
+<%= form_tag 'posts', method: "POST", class: "myform" do %>
   <input type="text" name="title" placeholder="제목...">
   <textarea name="content" placeholder="내용을 입력..." rows="10"></textarea>
   <input type="submit" value="글 남기기">
-</form>
+<% end %>
 
 <div class="title">
   title : <%= @title %>
